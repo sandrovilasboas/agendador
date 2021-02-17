@@ -1,0 +1,128 @@
+object Fgrid_produto: TFgrid_produto
+  Left = 0
+  Top = 0
+  BorderStyle = bsNone
+  ClientHeight = 463
+  ClientWidth = 759
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 759
+    Height = 463
+    Align = alClient
+    TabOrder = 0
+    object DBGrid1: TDBGrid
+      Left = 38
+      Top = 24
+      Width = 683
+      Height = 340
+      DataSource = DataSource1
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'id'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'descricao'
+          Title.Caption = 'DESCRI'#199#195'O'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'valor'
+          Title.Caption = 'VALOR'
+          Visible = True
+        end>
+    end
+    object Panel2: TPanel
+      Left = 1
+      Top = 382
+      Width = 757
+      Height = 80
+      Align = alBottom
+      TabOrder = 1
+      object BitBtn1: TBitBtn
+        AlignWithMargins = True
+        Left = 489
+        Top = 11
+        Width = 197
+        Height = 58
+        Margins.Top = 10
+        Margins.Right = 70
+        Margins.Bottom = 10
+        Align = alRight
+        Caption = 'FECHAR'
+        TabOrder = 0
+        OnClick = BitBtn1Click
+      end
+      object BitBtn2: TBitBtn
+        AlignWithMargins = True
+        Left = 71
+        Top = 11
+        Width = 197
+        Height = 58
+        Margins.Left = 70
+        Margins.Top = 10
+        Margins.Bottom = 10
+        Align = alLeft
+        Caption = 'CADASTRAR'
+        TabOrder = 1
+      end
+    end
+  end
+  object DataSource1: TDataSource
+    Left = 544
+    Top = 208
+  end
+  object FDQuery1: TFDQuery
+    Connection = Fdelivery.FDConnection1
+    SQL.Strings = (
+      'SELECT * FROM PRODUTO')
+    Left = 544
+    Top = 160
+    object FDQuery1id: TFDAutoIncField
+      DisplayLabel = 'ID'
+      DisplayWidth = 10
+      FieldName = 'id'
+      Origin = 'id'
+      ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
+    end
+    object FDQuery1descricao: TWideMemoField
+      DisplayLabel = 'DESCRICAO'
+      DisplayWidth = 63
+      FieldName = 'descricao'
+      Origin = 'descricao'
+      Required = True
+      BlobType = ftWideMemo
+      DisplayValue = dvFull
+    end
+    object FDQuery1valor: TBCDField
+      FieldName = 'valor'
+      Origin = 'valor'
+      Required = True
+      Precision = 10
+      Size = 2
+    end
+  end
+end

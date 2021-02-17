@@ -1,0 +1,69 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 752
+  ClientWidth = 1394
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object btnCadastro: TButton
+    Left = 24
+    Top = 8
+    Width = 257
+    Height = 73
+    Caption = 'Cadastro'
+    TabOrder = 0
+    OnClick = btnCadastroClick
+  end
+  object btnFinanceiro: TButton
+    Left = 296
+    Top = 9
+    Width = 257
+    Height = 73
+    Caption = 'Financeiro'
+    TabOrder = 1
+    OnClick = btnCadastroClick
+  end
+  object btnVendas: TButton
+    Left = 568
+    Top = 8
+    Width = 257
+    Height = 73
+    Caption = 'Vendas'
+    TabOrder = 2
+    OnClick = btnCadastroClick
+  end
+  object btnEstoque: TButton
+    Left = 840
+    Top = 8
+    Width = 257
+    Height = 73
+    Caption = 'Estoque'
+    TabOrder = 3
+    OnClick = btnCadastroClick
+  end
+  object btnFiscal: TButton
+    Left = 1112
+    Top = 8
+    Width = 257
+    Height = 73
+    Caption = 'Fiscal'
+    TabOrder = 4
+    OnClick = btnCadastroClick
+  end
+  object Panel1: TPanel
+    Left = 8
+    Top = 88
+    Width = 1377
+    Height = 657
+    Caption = 'Panel1'
+    TabOrder = 5
+  end
+end

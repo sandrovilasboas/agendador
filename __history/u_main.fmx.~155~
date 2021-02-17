@@ -1,0 +1,2237 @@
+object f_main: Tf_main
+  Left = 0
+  Top = 0
+  BorderStyle = None
+  Caption = 'Krieg Solution'
+  ClientHeight = 720
+  ClientWidth = 1280
+  Position = DesktopCenter
+  Transparency = True
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object container: TRectangle
+    Align = Client
+    Size.Width = 1280.000000000000000000
+    Size.Height = 720.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    object body: TRectangle
+      Align = Client
+      Fill.Color = xFFFFF7DC
+      Size.Width = 1280.000000000000000000
+      Size.Height = 720.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claNull
+      object menu: TRectangle
+        Align = Left
+        Fill.Color = xFFFFF7DC
+        Margins.Left = 50.000000000000000000
+        Margins.Right = 50.000000000000000000
+        Position.X = 50.000000000000000000
+        Size.Width = 329.000000000000000000
+        Size.Height = 720.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claNull
+        object style: TRectangle
+          Align = Top
+          Fill.Color = xFFFFF7DC
+          Size.Width = 329.000000000000000000
+          Size.Height = 257.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claNull
+          object Circle5: TCircle
+            Align = Center
+            Fill.Color = xFFFFE4B9
+            Size.Width = 225.000000000000000000
+            Size.Height = 185.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claNull
+            object Circle1: TCircle
+              Fill.Color = claCoral
+              Position.X = 88.000000000000000000
+              Position.Y = 64.000000000000000000
+              Size.Width = 50.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claNull
+            end
+            object Circle2: TCircle
+              Fill.Color = claOrangered
+              Position.X = 96.000000000000000000
+              Position.Y = 168.000000000000000000
+              Size.Width = 50.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claNull
+            end
+            object Circle3: TCircle
+              Fill.Color = xFF81F6F6
+              Position.X = 168.000000000000000000
+              Size.Width = 81.000000000000000000
+              Size.Height = 74.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claNull
+            end
+            object Circle4: TCircle
+              Fill.Color = xFFD8FDFD
+              Position.X = 7.000000000000000000
+              Position.Y = 113.000000000000000000
+              Size.Width = 50.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claNull
+            end
+            object Circle6: TCircle
+              Fill.Color = xFF03CACA
+              Position.X = -8.000000000000000000
+              Position.Y = -16.000000000000000000
+              Size.Width = 81.000000000000000000
+              Size.Height = 74.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claNull
+            end
+          end
+        end
+        object menu2: TRectangle
+          Align = Client
+          Fill.Color = xFFFFF7DC
+          Margins.Top = 50.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 329.000000000000000000
+          Size.Height = 403.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claNull
+          object option1: TRectangle
+            Align = Top
+            Fill.Color = xFF0CCACA
+            Margins.Bottom = 10.000000000000000000
+            Size.Width = 329.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claNull
+            XRadius = 20.000000000000000000
+            YRadius = 20.000000000000000000
+            OnClick = option1Click
+            OnMouseEnter = option1MouseEnter
+            OnMouseLeave = option1MouseLeave
+            object btninicio: TSpeedButton
+              Align = Client
+              StyledSettings = []
+              HitTest = False
+              Size.Width = 329.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              ParentShowHint = False
+              ShowHint = False
+              Text = 'IN'#205'CIO'
+              TextSettings.Font.Family = 'Roboto'
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claWhite
+            end
+          end
+          object option6: TRectangle
+            Align = Top
+            Fill.Color = claCrimson
+            Margins.Bottom = 10.000000000000000000
+            Position.Y = 300.000000000000000000
+            Size.Width = 329.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claNull
+            XRadius = 20.000000000000000000
+            YRadius = 20.000000000000000000
+            OnClick = option6Click
+            OnMouseEnter = option6MouseEnter
+            OnMouseLeave = option6MouseLeave
+            object btnsair: TSpeedButton
+              Align = Client
+              StyledSettings = []
+              HitTest = False
+              Size.Width = 329.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'SAIR'
+              TextSettings.Font.Family = 'Roboto'
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claWhite
+            end
+          end
+          object option5: TRectangle
+            Align = Top
+            Fill.Color = xFF0CCACA
+            Margins.Bottom = 10.000000000000000000
+            Position.Y = 240.000000000000000000
+            Size.Width = 329.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claNull
+            XRadius = 20.000000000000000000
+            YRadius = 20.000000000000000000
+            OnMouseEnter = option5MouseEnter
+            OnMouseLeave = option5MouseLeave
+            object btnconfiguracao: TSpeedButton
+              Align = Client
+              StyledSettings = []
+              HitTest = False
+              Size.Width = 329.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'CONFIGURA'#199#195'O'
+              TextSettings.Font.Family = 'Roboto'
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claWhite
+            end
+          end
+          object option4: TRectangle
+            Align = Top
+            Fill.Color = xFF0CCACA
+            Margins.Bottom = 10.000000000000000000
+            Position.Y = 180.000000000000000000
+            Size.Width = 329.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claNull
+            XRadius = 20.000000000000000000
+            YRadius = 20.000000000000000000
+            OnMouseEnter = option4MouseEnter
+            OnMouseLeave = option4MouseLeave
+            object btnrelatorio: TSpeedButton
+              Align = Client
+              StyledSettings = []
+              HitTest = False
+              Size.Width = 329.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'RELAT'#211'RIOS'
+              TextSettings.Font.Family = 'Roboto'
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claWhite
+            end
+          end
+          object option3: TRectangle
+            Align = Top
+            Fill.Color = xFF0CCACA
+            Margins.Bottom = 10.000000000000000000
+            Position.Y = 120.000000000000000000
+            Size.Width = 329.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claNull
+            XRadius = 20.000000000000000000
+            YRadius = 20.000000000000000000
+            OnClick = option3Click
+            OnMouseEnter = option3MouseEnter
+            OnMouseLeave = option3MouseLeave
+            object btnfinanceiro: TSpeedButton
+              Align = Client
+              StyledSettings = []
+              HitTest = False
+              Size.Width = 329.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'FINANCEIRO'
+              TextSettings.Font.Family = 'Roboto'
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claWhite
+            end
+          end
+          object option2: TRectangle
+            Align = Top
+            Fill.Color = xFF0CCACA
+            Margins.Bottom = 10.000000000000000000
+            Position.Y = 60.000000000000000000
+            Size.Width = 329.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claNull
+            XRadius = 20.000000000000000000
+            YRadius = 20.000000000000000000
+            OnClick = option2Click
+            OnMouseEnter = option2MouseEnter
+            OnMouseLeave = option2MouseLeave
+            object btnagendamento: TSpeedButton
+              Align = Client
+              StyledSettings = []
+              HitTest = False
+              Size.Width = 329.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'AGENDAMENTO'
+              TextSettings.Font.Family = 'Roboto'
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claWhite
+            end
+          end
+        end
+      end
+      object tabs: TRectangle
+        Align = Client
+        Fill.Color = xFFD8FDFD
+        Size.Width = 831.000000000000000000
+        Size.Height = 720.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claNull
+        object TabControl: TTabControl
+          Align = Client
+          Size.Width = 831.000000000000000000
+          Size.Height = 720.000000000000000000
+          Size.PlatformDefault = False
+          TabIndex = 0
+          TabOrder = 0
+          TabPosition = None
+          Sizes = (
+            831s
+            720s
+            831s
+            720s
+            831s
+            720s
+            831s
+            720s
+            831s
+            720s
+            831s
+            720s)
+          object TabItem1: TTabItem
+            CustomIcon = <
+              item
+              end>
+            IsSelected = True
+            Size.Width = 8.000000000000000000
+            Size.Height = 8.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = ''
+            TabOrder = 0
+            Text = 'TabItem1'
+            ExplicitSize.cx = 8.000000000000000000
+            ExplicitSize.cy = 8.000000000000000000
+            object background: TRectangle
+              Align = Client
+              Fill.Color = xFFD8FDFD
+              Size.Width = 831.000000000000000000
+              Size.Height = 720.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claNull
+              object background2: TRectangle
+                Align = Left
+                Fill.Color = xFFD8FDFD
+                Size.Width = 753.000000000000000000
+                Size.Height = 720.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Color = claNull
+                object backgroundgrid: TRectangle
+                  Align = Client
+                  Fill.Color = xFFD8FDFD
+                  Size.Width = 753.000000000000000000
+                  Size.Height = 239.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Color = claNull
+                  object backgroundgrid2: TRectangle
+                    Align = Client
+                    Fill.Color = xFFFFF7DC
+                    Margins.Left = 50.000000000000000000
+                    Margins.Right = 50.000000000000000000
+                    Margins.Bottom = 50.000000000000000000
+                    Size.Width = 653.000000000000000000
+                    Size.Height = 189.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    object grid: TGrid
+                      Align = Client
+                      CanFocus = True
+                      ClipChildren = True
+                      Size.Width = 653.000000000000000000
+                      Size.Height = 189.000000000000000000
+                      Size.PlatformDefault = False
+                      TabOrder = 0
+                      RowCount = 0
+                      Options = [AlternatingRowBackground, ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, HeaderClick, AutoDisplacement]
+                      OnCellDblClick = gridCellDblClick
+                      Viewport.Width = 649.000000000000000000
+                      Viewport.Height = 164.000000000000000000
+                    end
+                  end
+                end
+                object backgroundcalendar: TRectangle
+                  Align = Top
+                  Fill.Color = xFFD8FDFD
+                  Size.Width = 753.000000000000000000
+                  Size.Height = 481.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Color = claNull
+                  object backgroundcalendar2: TRectangle
+                    Align = Client
+                    Fill.Color = xFFFFF7DC
+                    Margins.Left = 50.000000000000000000
+                    Margins.Top = 50.000000000000000000
+                    Margins.Right = 50.000000000000000000
+                    Margins.Bottom = 50.000000000000000000
+                    Size.Width = 653.000000000000000000
+                    Size.Height = 381.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = xFFD8FDFD
+                    Stroke.Thickness = 2.000000000000000000
+                    object Calendar1: TCalendar
+                      Align = Client
+                      Date = 44244.000000000000000000
+                      Margins.Left = 10.000000000000000000
+                      Margins.Top = 10.000000000000000000
+                      Margins.Right = 10.000000000000000000
+                      Margins.Bottom = 10.000000000000000000
+                      Size.Width = 633.000000000000000000
+                      Size.Height = 361.000000000000000000
+                      Size.PlatformDefault = False
+                      TabOrder = 0
+                      TodayDefault = True
+                      OnDateSelected = Calendar1DateSelected
+                      OnDayClick = Calendar1DayClick
+                    end
+                  end
+                end
+              end
+            end
+            object finalizar: TRectangle
+              Align = Center
+              Fill.Color = xFF03CACA
+              Size.Width = 475.000000000000000000
+              Size.Height = 371.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claNull
+              Visible = False
+              XRadius = 20.000000000000000000
+              YRadius = 20.000000000000000000
+              object rectangle: TRectangle
+                Align = Top
+                Fill.Color = xFF03CACA
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 3.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 5.000000000000000000
+                Size.Width = 465.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Color = claNull
+                XRadius = 20.000000000000000000
+                YRadius = 20.000000000000000000
+                object Label3: TLabel
+                  Align = Center
+                  StyledSettings = []
+                  Size.Width = 378.000000000000000000
+                  Size.Height = 50.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.Family = 'Roboto'
+                  TextSettings.Font.Size = 42.000000000000000000
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claWhite
+                  Text = 'FINALIZAR'
+                  TabOrder = 0
+                end
+              end
+              object Rectangle47: TRectangle
+                Align = Client
+                Fill.Color = xFFFFF7DC
+                Margins.Left = 3.000000000000000000
+                Margins.Right = 3.000000000000000000
+                Margins.Bottom = 3.000000000000000000
+                Size.Width = 469.000000000000000000
+                Size.Height = 310.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Color = claNull
+                XRadius = 20.000000000000000000
+                YRadius = 20.000000000000000000
+                object Rectangle48: TRectangle
+                  Align = Bottom
+                  Fill.Color = xFFFFF7DC
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Position.X = 5.000000000000000000
+                  Position.Y = 255.000000000000000000
+                  Size.Width = 459.000000000000000000
+                  Size.Height = 50.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Color = claNull
+                  XRadius = 20.000000000000000000
+                  YRadius = 20.000000000000000000
+                  object Rectangle50: TRectangle
+                    Fill.Color = xFF03CACA
+                    Margins.Left = 5.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Position.X = 19.000000000000000000
+                    Position.Y = -1.000000000000000000
+                    Size.Width = 130.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                    OnClick = Rectangle50Click
+                    object btnfinalizargerar: TSpeedButton
+                      Align = Client
+                      StyledSettings = []
+                      HitTest = False
+                      Size.Width = 130.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      Text = 'GERAR FINANCEIRO'
+                      TextSettings.Font.Family = 'Roboto'
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claWhite
+                    end
+                  end
+                  object Rectangle51: TRectangle
+                    Fill.Color = claOrange
+                    Margins.Left = 5.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Position.X = 309.000000000000000000
+                    Size.Width = 130.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                    OnClick = Rectangle51Click
+                    object btnfinalizarvoltar: TSpeedButton
+                      Align = Client
+                      StyledSettings = [Size]
+                      HitTest = False
+                      Size.Width = 130.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      Text = 'VOLTAR'
+                      TextSettings.Font.Family = 'Roboto'
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claWhite
+                    end
+                  end
+                  object Rectangle52: TRectangle
+                    Fill.Color = claCrimson
+                    Margins.Left = 5.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Position.X = 164.000000000000000000
+                    Size.Width = 130.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                    OnClick = Rectangle52Click
+                    object btnfinalizardesmarcar: TSpeedButton
+                      Align = Client
+                      StyledSettings = [Size]
+                      HitTest = False
+                      Size.Width = 130.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      Text = 'DESMARCAR'
+                      TextSettings.Font.Family = 'Roboto'
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claWhite
+                    end
+                  end
+                end
+                object Rectangle49: TRectangle
+                  Align = Client
+                  Fill.Color = xFFFFF7DC
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Size.Width = 459.000000000000000000
+                  Size.Height = 245.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Color = claNull
+                  XRadius = 20.000000000000000000
+                  YRadius = 20.000000000000000000
+                  object edtvalor1: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    TabOrder = 0
+                    TextSettings.Font.Family = 'Roboto'
+                    TextSettings.Font.Size = 20.000000000000000000
+                    TextSettings.Font.StyleExt = {00070000000000000004000000}
+                    Position.X = 32.000000000000000000
+                    Position.Y = 12.000000000000000000
+                    Size.Width = 161.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    StyledSettings = [FontColor]
+                  end
+                  object btnadd2: TSpeedButton
+                    StyledSettings = [Family, Size, Style]
+                    Position.X = 72.000000000000000000
+                    Position.Y = 45.000000000000000000
+                    Size.Width = 305.000000000000000000
+                    Size.Height = 22.000000000000000000
+                    Size.PlatformDefault = False
+                    Text = 'ADICIONAR MAIS FORMAS DE RECEBIMENTO'
+                    OnClick = btnadd2Click
+                  end
+                  object edtvalor2: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    TabOrder = 2
+                    TextSettings.Font.Family = 'Roboto'
+                    TextSettings.Font.Size = 20.000000000000000000
+                    TextSettings.Font.StyleExt = {00070000000000000004000000}
+                    Position.X = 32.000000000000000000
+                    Position.Y = 71.000000000000000000
+                    Size.Width = 161.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    StyledSettings = [FontColor]
+                    Visible = False
+                  end
+                  object edtvalor3: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    TabOrder = 3
+                    TextSettings.Font.Family = 'Roboto'
+                    TextSettings.Font.Size = 20.000000000000000000
+                    TextSettings.Font.StyleExt = {00070000000000000004000000}
+                    Position.X = 32.000000000000000000
+                    Position.Y = 129.000000000000000000
+                    Size.Width = 161.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    StyledSettings = [FontColor]
+                    Visible = False
+                  end
+                  object btnadd3: TSpeedButton
+                    Position.X = 72.000000000000000000
+                    Position.Y = 105.000000000000000000
+                    Size.Width = 305.000000000000000000
+                    Size.Height = 20.000000000000000000
+                    Size.PlatformDefault = False
+                    Text = 'ADICIONAR MAIS FORMAS DE RECEBIMENTO'
+                    Visible = False
+                    OnClick = btnadd3Click
+                  end
+                  object edtvalor4: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    TabOrder = 5
+                    TextSettings.Font.Family = 'Roboto'
+                    TextSettings.Font.Size = 20.000000000000000000
+                    TextSettings.Font.StyleExt = {00070000000000000004000000}
+                    Position.X = 32.000000000000000000
+                    Position.Y = 186.000000000000000000
+                    Size.Width = 161.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    StyledSettings = [FontColor]
+                    Visible = False
+                  end
+                  object btnadd4: TSpeedButton
+                    Position.X = 72.000000000000000000
+                    Position.Y = 163.000000000000000000
+                    Size.Width = 305.000000000000000000
+                    Size.Height = 20.000000000000000000
+                    Size.PlatformDefault = False
+                    Text = 'ADICIONAR MAIS FORMAS DE RECEBIMENTO'
+                    Visible = False
+                    OnClick = btnadd4Click
+                  end
+                  object edtforma1: TComboBox
+                    Items.Strings = (
+                      'DINHEIRO'
+                      'CARTAO DE CREDITO'
+                      'CARTAO DE DEBITO'
+                      'CHEQUE'
+                      'A PRAZO'
+                      'DESCONTO')
+                    Position.X = 264.000000000000000000
+                    Position.Y = 13.000000000000000000
+                    Size.Width = 161.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 6
+                  end
+                  object edtforma2: TComboBox
+                    Items.Strings = (
+                      'DINHEIRO'
+                      'CARTAO DE CREDITO'
+                      'CARTAO DE DEBITO'
+                      'CHEQUE'
+                      'A PRAZO'
+                      'DESCONTO')
+                    Position.X = 264.000000000000000000
+                    Position.Y = 72.000000000000000000
+                    Size.Width = 161.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 7
+                    Visible = False
+                  end
+                  object edtforma4: TComboBox
+                    Items.Strings = (
+                      'DINHEIRO'
+                      'CARTAO DE CREDITO'
+                      'CARTAO DE DEBITO'
+                      'CHEQUE'
+                      'A PRAZO'
+                      'DESCONTO')
+                    Position.X = 264.000000000000000000
+                    Position.Y = 185.000000000000000000
+                    Size.Width = 161.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 8
+                    Visible = False
+                  end
+                  object edtforma3: TComboBox
+                    Items.Strings = (
+                      'DINHEIRO'
+                      'CARTAO DE CREDITO'
+                      'CARTAO DE DEBITO'
+                      'CHEQUE'
+                      'A PRAZO'
+                      'DESCONTO')
+                    Position.X = 264.000000000000000000
+                    Position.Y = 129.000000000000000000
+                    Size.Width = 161.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 9
+                    Visible = False
+                  end
+                end
+              end
+            end
+          end
+          object TabItem2: TTabItem
+            CustomIcon = <
+              item
+              end>
+            IsSelected = False
+            Size.Width = 8.000000000000000000
+            Size.Height = 8.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = ''
+            TabOrder = 0
+            Text = 'TabItem2'
+            ExplicitSize.cx = 8.000000000000000000
+            ExplicitSize.cy = 8.000000000000000000
+            object backgroundagendamento: TRectangle
+              Align = Client
+              Fill.Color = xFFD8FDFD
+              Size.Width = 831.000000000000000000
+              Size.Height = 720.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = xFFD8FDFD
+              object backgroundagendamento2: TRectangle
+                Align = Center
+                Fill.Color = xFF0CCACA
+                Size.Width = 777.000000000000000000
+                Size.Height = 548.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Color = claNull
+                XRadius = 20.000000000000000000
+                YRadius = 20.000000000000000000
+                object backgroundagendamento3: TRectangle
+                  Align = Top
+                  Fill.Color = xFF0CCACA
+                  Size.Width = 777.000000000000000000
+                  Size.Height = 57.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Color = claNull
+                  XRadius = 20.000000000000000000
+                  YRadius = 20.000000000000000000
+                  object lbltitleagendamento: TLabel
+                    Align = Center
+                    StyledSettings = []
+                    Size.Width = 632.000000000000000000
+                    Size.Height = 37.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.Font.Family = 'Roboto'
+                    TextSettings.Font.Size = 42.000000000000000000
+                    TextSettings.Font.StyleExt = {00070000000000000004000000}
+                    TextSettings.FontColor = claWhite
+                    Text = 'AGENDAMENTO'
+                    TabOrder = 0
+                  end
+                end
+                object backgroundagendamento4: TRectangle
+                  Align = Client
+                  Fill.Color = xFFFFF7DC
+                  Margins.Left = 3.000000000000000000
+                  Margins.Top = 3.000000000000000000
+                  Margins.Right = 3.000000000000000000
+                  Margins.Bottom = 3.000000000000000000
+                  Size.Width = 771.000000000000000000
+                  Size.Height = 485.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Color = xFF81F6F6
+                  XRadius = 18.000000000000000000
+                  YRadius = 18.000000000000000000
+                  object backgroundagendamento8: TRectangle
+                    Align = Bottom
+                    Fill.Color = xFFFFF7DC
+                    Margins.Left = 40.000000000000000000
+                    Margins.Right = 40.000000000000000000
+                    Margins.Bottom = 10.000000000000000000
+                    Position.X = 40.000000000000000000
+                    Position.Y = 425.000000000000000000
+                    Size.Width = 691.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    object Rectangle33: TRectangle
+                      Align = Left
+                      Fill.Color = xFF0CCACA
+                      Size.Width = 209.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      Stroke.Color = claNull
+                      XRadius = 20.000000000000000000
+                      YRadius = 20.000000000000000000
+                      OnClick = Rectangle33Click
+                      object SpeedButton7: TSpeedButton
+                        Align = Client
+                        StyledSettings = []
+                        HitTest = False
+                        Size.Width = 209.000000000000000000
+                        Size.Height = 50.000000000000000000
+                        Size.PlatformDefault = False
+                        Text = 'AGENDAR'
+                        TextSettings.Font.Family = 'Roboto'
+                        TextSettings.Font.Size = 20.000000000000000000
+                        TextSettings.Font.StyleExt = {00070000000000000004000000}
+                        TextSettings.FontColor = claWhite
+                      end
+                    end
+                    object Rectangle34: TRectangle
+                      Align = Right
+                      Fill.Color = claOrangered
+                      Position.X = 482.000000000000000000
+                      Size.Width = 209.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      Stroke.Color = claNull
+                      Stroke.Thickness = 3.000000000000000000
+                      XRadius = 20.000000000000000000
+                      YRadius = 20.000000000000000000
+                      OnClick = Rectangle34Click
+                      object SpeedButton8: TSpeedButton
+                        Align = Client
+                        StyledSettings = []
+                        HitTest = False
+                        Size.Width = 209.000000000000000000
+                        Size.Height = 50.000000000000000000
+                        Size.PlatformDefault = False
+                        Text = 'VOLTAR'
+                        TextSettings.Font.Family = 'Roboto'
+                        TextSettings.Font.Size = 20.000000000000000000
+                        TextSettings.Font.StyleExt = {00070000000000000004000000}
+                        TextSettings.FontColor = claWhite
+                      end
+                    end
+                  end
+                  object Button1: TButton
+                    StyledSettings = []
+                    Position.X = 35.000000000000000000
+                    Position.Y = 50.000000000000000000
+                    Size.Width = 80.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    Text = 'Buscar'
+                    TextSettings.Font.Family = 'Roboto'
+                    TextSettings.Font.Size = 20.000000000000000000
+                    TextSettings.Font.StyleExt = {00070000000000000004000000}
+                    OnClick = Button1Click
+                  end
+                  object edtdocumento: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    StyleLookup = 'editstyle'
+                    TabOrder = 3
+                    TextSettings.Font.Family = 'Roboto'
+                    TextSettings.Font.Size = 20.000000000000000000
+                    Position.X = 518.000000000000000000
+                    Position.Y = 50.000000000000000000
+                    Size.Width = 134.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    StyledSettings = [FontColor]
+                    CharCase = ecUpperCase
+                  end
+                  object edtnome: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    StyleLookup = 'editstyle'
+                    TabOrder = 2
+                    TextSettings.Font.Family = 'Roboto'
+                    TextSettings.Font.Size = 20.000000000000000000
+                    Position.X = 135.000000000000000000
+                    Position.Y = 50.000000000000000000
+                    Size.Width = 363.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    StyledSettings = [FontColor]
+                    CharCase = ecUpperCase
+                  end
+                  object backgroundagendamentonome: TRectangle
+                    Fill.Color = xFF0CCACA
+                    Position.X = 20.000000000000000000
+                    Position.Y = 9.000000000000000000
+                    Size.Width = 720.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 16.500000000000000000
+                    YRadius = 16.500000000000000000
+                    object lblnome: TLabel
+                      StyledSettings = []
+                      Margins.Left = 120.000000000000000000
+                      Position.X = 114.000000000000000000
+                      Size.Width = 377.000000000000000000
+                      Size.Height = 33.000000000000000000
+                      Size.PlatformDefault = False
+                      TextSettings.Font.Family = 'Roboto'
+                      TextSettings.Font.Size = 20.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claWhite
+                      Text = 'NOME'
+                      TabOrder = 0
+                    end
+                    object lbldocumento: TLabel
+                      StyledSettings = []
+                      Margins.Left = 20.000000000000000000
+                      Position.X = 498.000000000000000000
+                      Size.Width = 308.000000000000000000
+                      Size.Height = 33.000000000000000000
+                      Size.PlatformDefault = False
+                      TextSettings.Font.Family = 'Roboto'
+                      TextSettings.Font.Size = 20.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claWhite
+                      Text = 'DOCUMENTO'
+                      TabOrder = 1
+                    end
+                  end
+                  object backgroundlbldata: TRectangle
+                    Fill.Color = xFF0CCACA
+                    Position.X = 20.000000000000000000
+                    Position.Y = 91.000000000000000000
+                    Size.Width = 720.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 16.500000000000000000
+                    YRadius = 16.500000000000000000
+                    object lbldata: TLabel
+                      Align = Left
+                      StyledSettings = []
+                      Margins.Left = 20.000000000000000000
+                      Position.X = 20.000000000000000000
+                      Size.Width = 133.000000000000000000
+                      Size.Height = 33.000000000000000000
+                      Size.PlatformDefault = False
+                      TextSettings.Font.Family = 'Roboto'
+                      TextSettings.Font.Size = 20.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claWhite
+                      Text = 'DATA'
+                      TabOrder = 0
+                    end
+                    object lbltelefone: TLabel
+                      Align = Left
+                      StyledSettings = []
+                      Margins.Left = 10.000000000000000000
+                      Position.X = 451.000000000000000000
+                      Size.Width = 116.000000000000000000
+                      Size.Height = 33.000000000000000000
+                      Size.PlatformDefault = False
+                      TextSettings.Font.Family = 'Roboto'
+                      TextSettings.Font.Size = 20.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claWhite
+                      Text = 'TELEFONE'
+                      TabOrder = 1
+                    end
+                    object lblcelular: TLabel
+                      Align = Left
+                      StyledSettings = []
+                      Margins.Left = 10.000000000000000000
+                      Position.X = 291.000000000000000000
+                      Size.Width = 150.000000000000000000
+                      Size.Height = 33.000000000000000000
+                      Size.PlatformDefault = False
+                      TextSettings.Font.Family = 'Roboto'
+                      TextSettings.Font.Size = 20.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claWhite
+                      Text = 'CELULAR'
+                      TabOrder = 2
+                    end
+                    object lblhorario: TLabel
+                      Align = Left
+                      StyledSettings = []
+                      Margins.Left = 20.000000000000000000
+                      Position.X = 173.000000000000000000
+                      Size.Width = 108.000000000000000000
+                      Size.Height = 33.000000000000000000
+                      Size.PlatformDefault = False
+                      TextSettings.Font.Family = 'Roboto'
+                      TextSettings.Font.Size = 20.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claWhite
+                      Text = 'HORARIO'
+                      TabOrder = 3
+                    end
+                  end
+                  object dtdate: TDateEdit
+                    Date = 44244.000000000000000000
+                    TodayDefault = True
+                    Position.X = 36.000000000000000000
+                    Position.Y = 132.000000000000000000
+                    Size.Width = 137.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    StyledSettings = [FontColor]
+                    TabOrder = 4
+                    TextSettings.Font.Family = 'Roboto'
+                    TextSettings.Font.Size = 20.000000000000000000
+                  end
+                  object edtcelular: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    StyleLookup = 'editstyle'
+                    TabOrder = 6
+                    TextSettings.Font.Family = 'Roboto'
+                    TextSettings.Font.Size = 20.000000000000000000
+                    Position.X = 311.000000000000000000
+                    Position.Y = 132.000000000000000000
+                    Size.Width = 141.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    StyledSettings = [FontColor]
+                    CharCase = ecUpperCase
+                  end
+                  object edttelefone: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    StyleLookup = 'editstyle'
+                    TabOrder = 7
+                    TextSettings.Font.Family = 'Roboto'
+                    TextSettings.Font.Size = 20.000000000000000000
+                    Position.X = 472.000000000000000000
+                    Position.Y = 132.000000000000000000
+                    Size.Width = 140.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    StyledSettings = [FontColor]
+                    CharCase = ecUpperCase
+                  end
+                  object tmtime: TTimeEdit
+                    Time = 0.333333333333333300
+                    Position.X = 193.000000000000000000
+                    Position.Y = 132.000000000000000000
+                    Size.Width = 96.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    StyledSettings = [FontColor]
+                    TextSettings.Font.Family = 'Roboto'
+                    TextSettings.Font.Size = 20.000000000000000000
+                    TabOrder = 5
+                  end
+                  object memo: TMemo
+                    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+                    CharCase = ecUpperCase
+                    DataDetectorTypes = []
+                    StyledSettings = [FontColor]
+                    TextSettings.Font.Family = 'Roboto'
+                    TextSettings.Font.Size = 20.000000000000000000
+                    TextSettings.Font.StyleExt = {00070000000000000004000000}
+                    Position.X = 32.000000000000000000
+                    Position.Y = 309.000000000000000000
+                    Size.Width = 697.000000000000000000
+                    Size.Height = 81.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 12
+                    Viewport.Width = 693.000000000000000000
+                    Viewport.Height = 77.000000000000000000
+                  end
+                  object backgroundlblobservacao: TRectangle
+                    Fill.Color = xFF0CCACA
+                    Position.X = 20.000000000000000000
+                    Position.Y = 267.000000000000000000
+                    Size.Width = 720.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 16.500000000000000000
+                    YRadius = 16.500000000000000000
+                    object lblobservacao: TLabel
+                      Align = Center
+                      StyledSettings = []
+                      Size.Width = 131.000000000000000000
+                      Size.Height = 33.000000000000000000
+                      Size.PlatformDefault = False
+                      TextSettings.Font.Family = 'Roboto'
+                      TextSettings.Font.Size = 20.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claWhite
+                      Text = 'OBSERVA'#199#195'O'
+                      TabOrder = 0
+                    end
+                  end
+                  object Button2: TButton
+                    CanFocus = False
+                    StyledSettings = []
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 5.000000000000000000
+                    Margins.Bottom = 15.000000000000000000
+                    Position.X = 433.000000000000000000
+                    Position.Y = 217.000000000000000000
+                    Size.Width = 39.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 15
+                    Text = '+'
+                    TextSettings.Font.Family = 'Roboto'
+                    TextSettings.Font.Size = 20.000000000000000000
+                    TextSettings.Font.StyleExt = {00070000000000000004000000}
+                    OnClick = Button2Click
+                  end
+                  object avaliacao: TCheckBox
+                    Anchors = []
+                    CanFocus = False
+                    Position.X = 599.000000000000000000
+                    Position.Y = 233.000000000000000000
+                    TabOrder = 17
+                    Text = 'Sujeito a avalia'#231#227'o'
+                    OnChange = avaliacaoChange
+                  end
+                  object cbProduto: TComboBox
+                    Anchors = []
+                    Position.X = 32.000000000000000000
+                    Position.Y = 217.000000000000000000
+                    Size.Width = 401.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 8
+                    OnEnter = cbProdutoEnter
+                  end
+                  object edtvalor: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Anchors = []
+                    StyleLookup = 'editstyle'
+                    TabOrder = 9
+                    TextSettings.Font.Family = 'Roboto'
+                    TextSettings.Font.Size = 20.000000000000000000
+                    Position.X = 485.000000000000000000
+                    Position.Y = 217.000000000000000000
+                    Size.Width = 105.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    StyledSettings = [FontColor]
+                    CharCase = ecUpperCase
+                  end
+                  object Rectangle45: TRectangle
+                    Anchors = []
+                    Fill.Color = xFF0CCACA
+                    Position.X = 20.000000000000000000
+                    Position.Y = 175.000000000000000000
+                    Size.Width = 720.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 16.500000000000000000
+                    YRadius = 16.500000000000000000
+                    object Label4: TLabel
+                      StyledSettings = []
+                      Position.X = 14.000000000000000000
+                      Size.Width = 88.000000000000000000
+                      Size.Height = 33.000000000000000000
+                      Size.PlatformDefault = False
+                      TextSettings.Font.Family = 'Roboto'
+                      TextSettings.Font.Size = 20.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claWhite
+                      Text = 'SERVI'#199'O'
+                      TabOrder = 0
+                    end
+                    object Label5: TLabel
+                      StyledSettings = []
+                      Position.X = 462.000000000000000000
+                      Size.Width = 88.000000000000000000
+                      Size.Height = 33.000000000000000000
+                      Size.PlatformDefault = False
+                      TextSettings.Font.Family = 'Roboto'
+                      TextSettings.Font.Size = 20.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claWhite
+                      Text = 'VALOR'
+                      TabOrder = 1
+                    end
+                  end
+                end
+                object servico: TRectangle
+                  Align = Center
+                  Fill.Color = xFF0CCACA
+                  Size.Width = 411.000000000000000000
+                  Size.Height = 202.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Color = claNull
+                  Visible = False
+                  XRadius = 20.000000000000000000
+                  YRadius = 20.000000000000000000
+                  object Rectangle53: TRectangle
+                    Align = Client
+                    Fill.Color = xFFFFF7DC
+                    Margins.Left = 3.000000000000000000
+                    Margins.Top = 50.000000000000000000
+                    Margins.Right = 3.000000000000000000
+                    Margins.Bottom = 3.000000000000000000
+                    Size.Width = 405.000000000000000000
+                    Size.Height = 149.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                    object edt_servico_descricao: TEdit
+                      Touch.InteractiveGestures = [LongTap, DoubleTap]
+                      TabOrder = 0
+                      TextSettings.Font.Family = 'Roboto'
+                      TextSettings.Font.Size = 20.000000000000000000
+                      Position.X = 10.000000000000000000
+                      Position.Y = 52.000000000000000000
+                      Size.Width = 289.000000000000000000
+                      Size.Height = 33.000000000000000000
+                      Size.PlatformDefault = False
+                      StyledSettings = [Style, FontColor]
+                      CharCase = ecUpperCase
+                    end
+                    object edt_servico_valor: TEdit
+                      Touch.InteractiveGestures = [LongTap, DoubleTap]
+                      TabOrder = 1
+                      TextSettings.Font.Family = 'Roboto'
+                      TextSettings.Font.Size = 20.000000000000000000
+                      Position.X = 306.000000000000000000
+                      Position.Y = 52.000000000000000000
+                      Size.Width = 79.000000000000000000
+                      Size.Height = 33.000000000000000000
+                      Size.PlatformDefault = False
+                      StyledSettings = [Style, FontColor]
+                    end
+                    object Rectangle54: TRectangle
+                      Fill.Color = xFF0CCACA
+                      Position.X = 32.000000000000000000
+                      Position.Y = 96.000000000000000000
+                      Size.Width = 161.000000000000000000
+                      Size.Height = 45.000000000000000000
+                      Size.PlatformDefault = False
+                      Stroke.Color = claNull
+                      XRadius = 20.000000000000000000
+                      YRadius = 20.000000000000000000
+                      OnClick = Rectangle54Click
+                      object SpeedButton2: TSpeedButton
+                        Align = Center
+                        StyledSettings = []
+                        HitTest = False
+                        Size.Width = 117.000000000000000000
+                        Size.Height = 53.000000000000000000
+                        Size.PlatformDefault = False
+                        Text = 'CADASTRAR'
+                        TextSettings.Font.Family = 'Roboto'
+                        TextSettings.Font.Size = 20.000000000000000000
+                        TextSettings.Font.StyleExt = {00070000000000000004000000}
+                        TextSettings.FontColor = claWhite
+                      end
+                    end
+                    object Rectangle55: TRectangle
+                      Fill.Color = claOrangered
+                      Position.X = 208.000000000000000000
+                      Position.Y = 96.000000000000000000
+                      Size.Width = 161.000000000000000000
+                      Size.Height = 45.000000000000000000
+                      Size.PlatformDefault = False
+                      Stroke.Color = claNull
+                      Stroke.Thickness = 3.000000000000000000
+                      XRadius = 20.000000000000000000
+                      YRadius = 20.000000000000000000
+                      OnClick = Rectangle55Click
+                      object SpeedButton4: TSpeedButton
+                        Align = Center
+                        StyledSettings = []
+                        HitTest = False
+                        Size.Width = 121.000000000000000000
+                        Size.Height = 45.000000000000000000
+                        Size.PlatformDefault = False
+                        Text = 'VOLTAR'
+                        TextSettings.Font.Family = 'Roboto'
+                        TextSettings.Font.Size = 20.000000000000000000
+                        TextSettings.Font.StyleExt = {00070000000000000004000000}
+                        TextSettings.FontColor = claWhite
+                      end
+                    end
+                    object Rectangle56: TRectangle
+                      Fill.Color = xFF0CCACA
+                      Position.X = 8.000000000000000000
+                      Position.Y = 12.000000000000000000
+                      Size.Width = 385.000000000000000000
+                      Size.Height = 33.000000000000000000
+                      Size.PlatformDefault = False
+                      Stroke.Color = claNull
+                      XRadius = 16.500000000000000000
+                      YRadius = 16.500000000000000000
+                      object Label7: TLabel
+                        StyledSettings = []
+                        Position.X = 7.000000000000000000
+                        Size.Width = 114.000000000000000000
+                        Size.Height = 33.000000000000000000
+                        Size.PlatformDefault = False
+                        TextSettings.Font.Family = 'Roboto'
+                        TextSettings.Font.Size = 20.000000000000000000
+                        TextSettings.Font.StyleExt = {00070000000000000004000000}
+                        TextSettings.FontColor = claWhite
+                        Text = 'DESCRI'#199#195'O'
+                        TabOrder = 0
+                      end
+                      object Label8: TLabel
+                        StyledSettings = []
+                        Position.X = 296.000000000000000000
+                        Size.Width = 89.000000000000000000
+                        Size.Height = 33.000000000000000000
+                        Size.PlatformDefault = False
+                        TextSettings.Font.Family = 'Roboto'
+                        TextSettings.Font.Size = 20.000000000000000000
+                        TextSettings.Font.StyleExt = {00070000000000000004000000}
+                        TextSettings.FontColor = claWhite
+                        Text = 'VALOR'
+                        TabOrder = 1
+                      end
+                    end
+                  end
+                  object Label6: TLabel
+                    StyledSettings = []
+                    Position.X = 48.000000000000000000
+                    Size.Width = 193.000000000000000000
+                    Size.Height = 49.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.Font.Family = 'Roboto'
+                    TextSettings.Font.Size = 42.000000000000000000
+                    TextSettings.Font.StyleExt = {00070000000000000004000000}
+                    TextSettings.FontColor = claWhite
+                    Text = 'SERVI'#199'O'
+                    TabOrder = 1
+                  end
+                end
+              end
+              object busca: TRectangle
+                Align = Center
+                Fill.Color = xFF0CCACA
+                Size.Width = 633.000000000000000000
+                Size.Height = 442.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Color = claNull
+                Visible = False
+                XRadius = 20.000000000000000000
+                YRadius = 20.000000000000000000
+                object Rectangle17: TRectangle
+                  Align = Top
+                  Fill.Color = xFF0CCACA
+                  Margins.Left = 10.000000000000000000
+                  Margins.Top = 10.000000000000000000
+                  Margins.Right = 10.000000000000000000
+                  Margins.Bottom = 10.000000000000000000
+                  Position.X = 10.000000000000000000
+                  Position.Y = 10.000000000000000000
+                  Size.Width = 613.000000000000000000
+                  Size.Height = 50.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Color = claNull
+                  XRadius = 20.000000000000000000
+                  YRadius = 20.000000000000000000
+                  object Label1: TLabel
+                    Align = Center
+                    StyledSettings = []
+                    Size.Width = 537.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.Font.Family = 'Roboto'
+                    TextSettings.Font.Size = 42.000000000000000000
+                    TextSettings.Font.StyleExt = {00070000000000000004000000}
+                    TextSettings.FontColor = claWhite
+                    Text = 'PESQUISAR'
+                    TabOrder = 0
+                  end
+                end
+                object Rectangle18: TRectangle
+                  Align = Client
+                  Fill.Color = xFFFFF7DC
+                  Margins.Left = 3.000000000000000000
+                  Margins.Right = 3.000000000000000000
+                  Margins.Bottom = 3.000000000000000000
+                  Size.Width = 627.000000000000000000
+                  Size.Height = 369.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Color = claNull
+                  XRadius = 20.000000000000000000
+                  YRadius = 20.000000000000000000
+                  object Rectangle19: TRectangle
+                    Align = Top
+                    Fill.Color = xFF0CCACA
+                    Margins.Left = 17.000000000000000000
+                    Margins.Top = 17.000000000000000000
+                    Margins.Right = 17.000000000000000000
+                    Position.X = 17.000000000000000000
+                    Position.Y = 17.000000000000000000
+                    Size.Width = 593.000000000000000000
+                    Size.Height = 40.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    object edtbuscar: TEdit
+                      Touch.InteractiveGestures = [LongTap, DoubleTap]
+                      Align = Client
+                      TabOrder = 0
+                      Margins.Left = 3.000000000000000000
+                      Margins.Top = 3.000000000000000000
+                      Margins.Right = 3.000000000000000000
+                      Margins.Bottom = 3.000000000000000000
+                      Size.Width = 587.000000000000000000
+                      Size.Height = 34.000000000000000000
+                      Size.PlatformDefault = False
+                      CharCase = ecUpperCase
+                      OnChange = edtbuscarChange
+                    end
+                  end
+                  object Grid2: TGrid
+                    Align = Client
+                    CanFocus = True
+                    ClipChildren = True
+                    Margins.Left = 20.000000000000000000
+                    Margins.Top = 20.000000000000000000
+                    Margins.Right = 20.000000000000000000
+                    Margins.Bottom = 20.000000000000000000
+                    Size.Width = 587.000000000000000000
+                    Size.Height = 212.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 1
+                    RowCount = 0
+                    Options = [AlternatingRowBackground, ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, HeaderClick, AutoDisplacement]
+                    OnCellDblClick = Grid2CellDblClick
+                    Viewport.Width = 583.000000000000000000
+                    Viewport.Height = 187.000000000000000000
+                  end
+                  object Rectangle20: TRectangle
+                    Align = Bottom
+                    Fill.Color = claNull
+                    Margins.Left = 5.000000000000000000
+                    Margins.Top = 5.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 5.000000000000000000
+                    Position.X = 5.000000000000000000
+                    Position.Y = 314.000000000000000000
+                    Size.Width = 617.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    object Rectangle21: TRectangle
+                      Align = Center
+                      Fill.Color = claOrangered
+                      Size.Width = 143.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      Stroke.Color = claNull
+                      XRadius = 20.000000000000000000
+                      YRadius = 20.000000000000000000
+                      OnClick = Rectangle21Click
+                      object SpeedButton1: TSpeedButton
+                        Align = Center
+                        StyledSettings = []
+                        HitTest = False
+                        Text = 'SAIR'
+                        TextSettings.Font.Family = 'Roboto'
+                        TextSettings.Font.Size = 20.000000000000000000
+                        TextSettings.Font.StyleExt = {00070000000000000004000000}
+                        TextSettings.FontColor = claWhite
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+          object TabItem3: TTabItem
+            CustomIcon = <
+              item
+              end>
+            IsSelected = False
+            Size.Width = 8.000000000000000000
+            Size.Height = 8.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = ''
+            TabOrder = 0
+            Text = 'TabItem2'
+            ExplicitSize.cx = 8.000000000000000000
+            ExplicitSize.cy = 8.000000000000000000
+            object Rectangle10: TRectangle
+              Align = Client
+              Fill.Color = xFFD8FDFD
+              Size.Width = 831.000000000000000000
+              Size.Height = 720.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claWhite
+            end
+            object Rectangle15: TRectangle
+              Align = Center
+              Fill.Color = xFF0CCACA
+              Size.Width = 773.000000000000000000
+              Size.Height = 555.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claNull
+              XRadius = 20.000000000000000000
+              YRadius = 20.000000000000000000
+              object Rectangle1: TRectangle
+                Align = Client
+                Fill.Color = xFFFFF7DC
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 763.000000000000000000
+                Size.Height = 483.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Color = claNull
+                XRadius = 20.000000000000000000
+                YRadius = 20.000000000000000000
+                object Grid1: TGrid
+                  Align = Client
+                  CanFocus = True
+                  ClipChildren = True
+                  Margins.Left = 35.000000000000000000
+                  Margins.Top = 10.000000000000000000
+                  Margins.Right = 35.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 693.000000000000000000
+                  Size.Height = 269.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 0
+                  Viewport.Width = 689.000000000000000000
+                  Viewport.Height = 244.000000000000000000
+                end
+                object Rectangle3: TRectangle
+                  Align = Bottom
+                  Fill.Color = xFFFFF7DC
+                  Margins.Left = 5.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Margins.Bottom = 5.000000000000000000
+                  Position.X = 5.000000000000000000
+                  Position.Y = 334.000000000000000000
+                  Size.Width = 753.000000000000000000
+                  Size.Height = 144.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Color = claNull
+                  XRadius = 20.000000000000000000
+                  YRadius = 20.000000000000000000
+                  object Rectangle4: TRectangle
+                    Align = Left
+                    Fill.Color = xFFFFF7DC
+                    Margins.Left = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Size.Width = 369.000000000000000000
+                    Size.Height = 144.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                    object Rectangle8: TRectangle
+                      Align = Bottom
+                      Fill.Color = claOrangered
+                      Margins.Left = 20.000000000000000000
+                      Margins.Top = 10.000000000000000000
+                      Margins.Right = 20.000000000000000000
+                      Margins.Bottom = 20.000000000000000000
+                      Position.X = 20.000000000000000000
+                      Position.Y = 74.000000000000000000
+                      Size.Width = 329.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      Stroke.Color = claNull
+                      XRadius = 20.000000000000000000
+                      YRadius = 20.000000000000000000
+                      object btncancelarlancamento: TSpeedButton
+                        Align = Client
+                        StyledSettings = []
+                        Size.Width = 329.000000000000000000
+                        Size.Height = 50.000000000000000000
+                        Size.PlatformDefault = False
+                        Text = 'CANCELAR LAN'#199'AMENTO'
+                        TextSettings.Font.Family = 'Roboto'
+                        TextSettings.Font.Size = 20.000000000000000000
+                        TextSettings.Font.StyleExt = {00070000000000000004000000}
+                        TextSettings.FontColor = claWhite
+                      end
+                    end
+                    object Rectangle9: TRectangle
+                      Align = Top
+                      Fill.Color = xFF0CCACA
+                      Margins.Left = 20.000000000000000000
+                      Margins.Top = 20.000000000000000000
+                      Margins.Right = 20.000000000000000000
+                      Margins.Bottom = 10.000000000000000000
+                      Position.X = 20.000000000000000000
+                      Position.Y = 20.000000000000000000
+                      Size.Width = 329.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      Stroke.Color = claNull
+                      XRadius = 20.000000000000000000
+                      YRadius = 20.000000000000000000
+                      object SpeedButton3: TSpeedButton
+                        Align = Client
+                        StyledSettings = []
+                        Size.Width = 329.000000000000000000
+                        Size.Height = 50.000000000000000000
+                        Size.PlatformDefault = False
+                        Text = 'VISUALIZAR RESUMO'
+                        TextSettings.Font.Family = 'Roboto'
+                        TextSettings.Font.Size = 20.000000000000000000
+                        TextSettings.Font.StyleExt = {00070000000000000004000000}
+                        TextSettings.FontColor = claWhite
+                      end
+                    end
+                  end
+                  object Rectangle5: TRectangle
+                    Align = Right
+                    Fill.Color = xFFFFF7DC
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 374.000000000000000000
+                    Size.Width = 369.000000000000000000
+                    Size.Height = 144.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                    object Rectangle6: TRectangle
+                      Align = Top
+                      Fill.Color = xFF0CCACA
+                      Margins.Left = 20.000000000000000000
+                      Margins.Top = 20.000000000000000000
+                      Margins.Right = 20.000000000000000000
+                      Position.X = 20.000000000000000000
+                      Position.Y = 20.000000000000000000
+                      Size.Width = 329.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      Stroke.Color = claNull
+                      XRadius = 20.000000000000000000
+                      YRadius = 20.000000000000000000
+                      object btneditarlancamento: TSpeedButton
+                        Align = Client
+                        StyledSettings = []
+                        Size.Width = 329.000000000000000000
+                        Size.Height = 50.000000000000000000
+                        Size.PlatformDefault = False
+                        Text = 'EDITAR LAN'#199'AMENTO'
+                        TextSettings.Font.Family = 'Roboto'
+                        TextSettings.Font.Size = 20.000000000000000000
+                        TextSettings.Font.StyleExt = {00070000000000000004000000}
+                        TextSettings.FontColor = claWhite
+                      end
+                    end
+                    object Rectangle7: TRectangle
+                      Align = Bottom
+                      Fill.Color = xFF0CCACA
+                      Margins.Left = 20.000000000000000000
+                      Margins.Right = 20.000000000000000000
+                      Margins.Bottom = 20.000000000000000000
+                      Position.X = 20.000000000000000000
+                      Position.Y = 74.000000000000000000
+                      Size.Width = 329.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      Stroke.Color = claNull
+                      XRadius = 20.000000000000000000
+                      YRadius = 20.000000000000000000
+                      object btninserircontasapagar: TSpeedButton
+                        Align = Client
+                        StyledSettings = []
+                        Size.Width = 329.000000000000000000
+                        Size.Height = 50.000000000000000000
+                        Size.PlatformDefault = False
+                        Text = 'INSERIR DEBITO'
+                        TextSettings.Font.Family = 'Roboto'
+                        TextSettings.Font.Size = 20.000000000000000000
+                        TextSettings.Font.StyleExt = {00070000000000000004000000}
+                        TextSettings.FontColor = claWhite
+                      end
+                    end
+                  end
+                end
+                object Rectangle14: TRectangle
+                  Align = Bottom
+                  Fill.Color = xFF0CCACA
+                  Margins.Left = 480.000000000000000000
+                  Margins.Top = 10.000000000000000000
+                  Margins.Right = 35.000000000000000000
+                  Position.X = 480.000000000000000000
+                  Position.Y = 294.000000000000000000
+                  Size.Width = 248.000000000000000000
+                  Size.Height = 35.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Color = claNull
+                  XRadius = 17.500000000000000000
+                  YRadius = 17.500000000000000000
+                  object lbltotal: TLabel
+                    Align = Right
+                    StyledSettings = []
+                    Position.X = 128.000000000000000000
+                    Size.Width = 120.000000000000000000
+                    Size.Height = 35.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.Font.Family = 'Roboto'
+                    TextSettings.Font.Size = 20.000000000000000000
+                    TextSettings.Font.StyleExt = {00070000000000000004000000}
+                    TextSettings.FontColor = claWhite
+                    Text = '0,00'
+                    TabOrder = 0
+                  end
+                  object total: TLabel
+                    Align = Right
+                    StyledSettings = []
+                    Position.X = 28.000000000000000000
+                    Size.Width = 100.000000000000000000
+                    Size.Height = 35.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.Font.Family = 'Roboto'
+                    TextSettings.Font.Size = 20.000000000000000000
+                    TextSettings.Font.StyleExt = {00070000000000000004000000}
+                    TextSettings.FontColor = claWhite
+                    Text = 'TOTAL:'
+                    TabOrder = 1
+                  end
+                end
+              end
+              object Rectangle2: TRectangle
+                Align = Top
+                Fill.Color = xFF0CCACA
+                Margins.Left = 10.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                Position.X = 10.000000000000000000
+                Position.Y = 10.000000000000000000
+                Size.Width = 753.000000000000000000
+                Size.Height = 47.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Color = claNull
+                XRadius = 20.000000000000000000
+                YRadius = 20.000000000000000000
+                object lbltitulofinanceiro: TLabel
+                  Align = Center
+                  StyledSettings = []
+                  Size.Width = 630.000000000000000000
+                  Size.Height = 47.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.Family = 'Roboto'
+                  TextSettings.Font.Size = 42.000000000000000000
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claWhite
+                  Text = 'FINANCEIRO'
+                  TabOrder = 0
+                end
+              end
+            end
+          end
+          object TabItem4: TTabItem
+            CustomIcon = <
+              item
+              end>
+            IsSelected = False
+            Size.Width = 8.000000000000000000
+            Size.Height = 8.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = ''
+            TabOrder = 0
+            Text = 'TabItem2'
+            ExplicitSize.cx = 8.000000000000000000
+            ExplicitSize.cy = 8.000000000000000000
+            object Rectangle11: TRectangle
+              Align = Client
+              Fill.Color = xFFD8FDFD
+              Size.Width = 831.000000000000000000
+              Size.Height = 720.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claWhite
+            end
+            object Rectangle16: TRectangle
+              Align = Center
+              Fill.Color = xFF03CACA
+              Size.Width = 663.000000000000000000
+              Size.Height = 548.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claNull
+              XRadius = 20.000000000000000000
+              YRadius = 20.000000000000000000
+              object Rectangle22: TRectangle
+                Align = Top
+                Fill.Color = xFF03CACA
+                Margins.Left = 10.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Margins.Bottom = 3.000000000000000000
+                Position.X = 10.000000000000000000
+                Position.Y = 10.000000000000000000
+                Size.Width = 643.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Color = claNull
+                XRadius = 20.000000000000000000
+                YRadius = 20.000000000000000000
+                object Label2: TLabel
+                  Align = Center
+                  StyledSettings = []
+                  Size.Width = 544.000000000000000000
+                  Size.Height = 50.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.Family = 'Roboto'
+                  TextSettings.Font.Size = 42.000000000000000000
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  TextSettings.FontColor = claWhite
+                  Text = 'RELAT'#211'RIOS'
+                  TabOrder = 0
+                end
+              end
+              object Rectangle23: TRectangle
+                Align = Client
+                Fill.Color = xFFFFF7DC
+                Margins.Left = 3.000000000000000000
+                Margins.Right = 3.000000000000000000
+                Margins.Bottom = 3.000000000000000000
+                Size.Width = 657.000000000000000000
+                Size.Height = 482.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Color = claNull
+                XRadius = 20.000000000000000000
+                YRadius = 20.000000000000000000
+                object Rectangle24: TRectangle
+                  Align = Left
+                  Fill.Color = xFFFFF7DC
+                  Size.Width = 310.000000000000000000
+                  Size.Height = 482.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Color = claNull
+                  XRadius = 20.000000000000000000
+                  YRadius = 20.000000000000000000
+                  object Rectangle26: TRectangle
+                    Align = Top
+                    Fill.Color = xFF03CACA
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 10.000000000000000000
+                    Size.Width = 290.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                  end
+                  object Rectangle27: TRectangle
+                    Align = Top
+                    Fill.Color = xFF03CACA
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 430.000000000000000000
+                    Size.Width = 290.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                  end
+                  object Rectangle28: TRectangle
+                    Align = Top
+                    Fill.Color = xFF03CACA
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 370.000000000000000000
+                    Size.Width = 290.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                  end
+                  object Rectangle29: TRectangle
+                    Align = Top
+                    Fill.Color = xFF03CACA
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 310.000000000000000000
+                    Size.Width = 290.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                  end
+                  object Rectangle30: TRectangle
+                    Align = Top
+                    Fill.Color = xFF03CACA
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 250.000000000000000000
+                    Size.Width = 290.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                  end
+                  object Rectangle31: TRectangle
+                    Align = Top
+                    Fill.Color = xFF03CACA
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 190.000000000000000000
+                    Size.Width = 290.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                  end
+                  object Rectangle32: TRectangle
+                    Align = Top
+                    Fill.Color = xFF03CACA
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 130.000000000000000000
+                    Size.Width = 290.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                  end
+                  object Rectangle35: TRectangle
+                    Align = Top
+                    Fill.Color = xFF03CACA
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 70.000000000000000000
+                    Size.Width = 290.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                  end
+                end
+                object Rectangle25: TRectangle
+                  Align = Right
+                  Fill.Color = xFFFFF7DC
+                  Position.X = 347.000000000000000000
+                  Size.Width = 310.000000000000000000
+                  Size.Height = 482.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Color = claNull
+                  XRadius = 20.000000000000000000
+                  YRadius = 20.000000000000000000
+                  object Rectangle36: TRectangle
+                    Align = Top
+                    Fill.Color = xFF03CACA
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 10.000000000000000000
+                    Size.Width = 290.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                  end
+                  object Rectangle38: TRectangle
+                    Align = Top
+                    Fill.Color = xFF03CACA
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 430.000000000000000000
+                    Size.Width = 290.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                  end
+                  object Rectangle39: TRectangle
+                    Align = Top
+                    Fill.Color = xFF03CACA
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 370.000000000000000000
+                    Size.Width = 290.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                  end
+                  object Rectangle40: TRectangle
+                    Align = Top
+                    Fill.Color = xFF03CACA
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 310.000000000000000000
+                    Size.Width = 290.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                  end
+                  object Rectangle41: TRectangle
+                    Align = Top
+                    Fill.Color = xFF03CACA
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 250.000000000000000000
+                    Size.Width = 290.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                  end
+                  object Rectangle42: TRectangle
+                    Align = Top
+                    Fill.Color = xFF03CACA
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 190.000000000000000000
+                    Size.Width = 290.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                  end
+                  object Rectangle43: TRectangle
+                    Align = Top
+                    Fill.Color = xFF03CACA
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 130.000000000000000000
+                    Size.Width = 290.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                  end
+                  object Rectangle44: TRectangle
+                    Align = Top
+                    Fill.Color = xFF03CACA
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Position.Y = 70.000000000000000000
+                    Size.Width = 290.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claNull
+                    XRadius = 20.000000000000000000
+                    YRadius = 20.000000000000000000
+                  end
+                end
+              end
+            end
+          end
+          object TabItem5: TTabItem
+            CustomIcon = <
+              item
+              end>
+            IsSelected = False
+            Size.Width = 8.000000000000000000
+            Size.Height = 8.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = ''
+            TabOrder = 0
+            Text = 'TabItem2'
+            ExplicitSize.cx = 8.000000000000000000
+            ExplicitSize.cy = 8.000000000000000000
+            object Rectangle12: TRectangle
+              Align = Client
+              Fill.Color = xFFD8FDFD
+              Size.Width = 831.000000000000000000
+              Size.Height = 720.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claWhite
+            end
+          end
+          object TabItem6: TTabItem
+            CustomIcon = <
+              item
+              end>
+            IsSelected = False
+            Size.Width = 8.000000000000000000
+            Size.Height = 8.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = ''
+            TabOrder = 0
+            Text = 'TabItem2'
+            ExplicitSize.cx = 8.000000000000000000
+            ExplicitSize.cy = 8.000000000000000000
+            object Rectangle13: TRectangle
+              Align = Client
+              Fill.Color = xFFD8FDFD
+              Size.Width = 831.000000000000000000
+              Size.Height = 720.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claWhite
+            end
+          end
+        end
+      end
+      object style2: TRectangle
+        Align = Left
+        Fill.Color = xFF0CCACA
+        Position.X = 429.000000000000000000
+        Size.Width = 20.000000000000000000
+        Size.Height = 720.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claNull
+        object Rectangle37: TRectangle
+          Align = Right
+          Fill.Color = xFF81F6F6
+          Position.X = 10.000000000000000000
+          Size.Width = 10.000000000000000000
+          Size.Height = 720.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claNull
+        end
+      end
+    end
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 29
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = grid
+      Columns = <
+        item
+          MemberName = 'pago'
+          Width = 40
+          ColumnStyle = 'CheckColumn'
+        end
+        item
+          MemberName = 'nome'
+          Width = 150
+        end
+        item
+          MemberName = 'celular'
+        end
+        item
+          MemberName = 'hora'
+          Width = 60
+        end
+        item
+          MemberName = 'observacao'
+          Width = 120
+        end
+        item
+          MemberName = 'servico'
+          Header = 'SERVICO'
+          Width = 120
+        end
+        item
+          MemberName = 'valor'
+          Header = 'VALOR'
+          Width = 50
+        end>
+      DefaultColumnWidth = 100
+    end
+    object LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      GridControl = Grid2
+      Columns = <
+        item
+          MemberName = 'cliente'
+        end
+        item
+          MemberName = 'nome'
+        end
+        item
+          MemberName = 'celular'
+        end>
+      DefaultColumnWidth = 200
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB3
+      FieldName = 'servico_valor'
+      Control = edtvalor
+      Track = False
+    end
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB3
+      FieldName = 'servico_descricao'
+      Control = cbProduto
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DataModule1.queryagenda
+    ScopeMappings = <>
+    Left = 16
+    Top = 88
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = DataModule1.querybusca
+    ScopeMappings = <>
+    Left = 16
+    Top = 160
+  end
+  object BindSourceDB3: TBindSourceDB
+    DataSet = DataModule1.queryservico
+    ScopeMappings = <>
+    Left = 16
+    Top = 224
+  end
+end

@@ -1,0 +1,44 @@
+unit u_main_menu;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
+  FMX.Controls.Presentation, FMX.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    main_menu: TRectangle;
+    main_buttons: TRectangle;
+    main_container: TRectangle;
+    main_style_top: TRectangle;
+    btn_home: TRectangle;
+    btn_agendar: TRectangle;
+    btn_relatorios: TRectangle;
+    btn_sair: TRectangle;
+    style: TRectangle;
+    Circle5: TCircle;
+    Circle1: TCircle;
+    Circle2: TCircle;
+    Circle3: TCircle;
+    Circle4: TCircle;
+    Circle6: TCircle;
+    speedbtn_home: TSpeedButton;
+    speedbtn_agendar: TSpeedButton;
+    speedbtn_relatorios: TSpeedButton;
+    speedbtn_sair: TSpeedButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.fmx}
+
+end.

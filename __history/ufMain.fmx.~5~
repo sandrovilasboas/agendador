@@ -1,0 +1,48 @@
+object fMain: TfMain
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 794
+  ClientWidth = 1335
+  Position = ScreenCenter
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Client
+    Fill.Color = xFFEBB254
+    Size.Width = 1335.000000000000000000
+    Size.Height = 639.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+  end
+  object Rectangle2: TRectangle
+    Align = Top
+    Fill.Color = xFFE49006
+    Size.Width = 1335.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+  end
+  object Rectangle3: TRectangle
+    Align = Bottom
+    Fill.Color = xFFE49006
+    Position.Y = 744.000000000000000000
+    Size.Width = 1335.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+  end
+  object MainMenu1: TMainMenu
+    Left = 1224
+    Top = 376
+    object MenuItem1: TMenuItem
+      Text = 'Produto'
+    end
+    object Cliente: TMenuItem
+      Text = 'Cliente'
+    end
+  end
+end

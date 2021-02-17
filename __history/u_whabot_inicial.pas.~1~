@@ -1,0 +1,24 @@
+unit u_whabot_inicial;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+
+type
+  TwhaBot = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  whaBot: TwhaBot;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,57 @@
+unit grid_produto;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.StdCtrls, Vcl.Buttons,
+  Vcl.Grids, Vcl.DBGrids, Vcl.ExtCtrls, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client;
+
+type
+  TFgrid_produto = class(TForm)
+    Panel1: TPanel;
+    DBGrid1: TDBGrid;
+    Panel2: TPanel;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    DataSource1: TDataSource;
+    FDQuery1: TFDQuery;
+    FDQuery1id: TFDAutoIncField;
+    FDQuery1descricao: TWideMemoField;
+    FDQuery1valor: TFloatField;
+    procedure BitBtn1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Fgrid_produto: TFgrid_produto;
+
+implementation
+uses delivery;
+
+{$R *.dfm}
+
+procedure TFgrid_produto.BitBtn1Click(Sender: TObject);
+begin
+ Close;
+end;
+
+procedure TFgrid_produto.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+ FDQuery1.Close;
+end;
+
+procedure TFgrid_produto.FormCreate(Sender: TObject);
+begin
+ FDQuery1.Open;
+end;
+
+end.

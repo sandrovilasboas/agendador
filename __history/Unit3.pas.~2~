@@ -1,0 +1,32 @@
+unit Unit3;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, REST.Types, REST.Client,
+  Data.Bind.Components, Data.Bind.ObjectScope;
+
+type
+  TDataModule3 = class(TDataModule)
+    RESTClient: TRESTClient;
+    RESTRequest: TRESTRequest;
+    RESTResponse: TRESTResponse;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    procedure getToken(username, password : String; source : Integer);
+    procedure getPedido(token : WideString; source : Integer);
+    procedure
+  end;
+
+var
+  DataModule3: TDataModule3;
+
+implementation
+
+{%CLASSGROUP 'System.Classes.TPersistent'}
+
+{$R *.dfm}
+
+end.

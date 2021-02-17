@@ -1,0 +1,336 @@
+object f_agendar: Tf_agendar
+  Left = 0
+  Top = 0
+  BorderStyle = None
+  ClientHeight = 544
+  ClientWidth = 762
+  Position = MainFormCenter
+  Transparency = True
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object backgroundagendamento2: TRectangle
+    Align = Center
+    Fill.Color = xFF0CCACA
+    Size.Width = 766.000000000000000000
+    Size.Height = 533.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    XRadius = 20.000000000000000000
+    YRadius = 20.000000000000000000
+    object backgroundagendamento3: TRectangle
+      Align = Top
+      Fill.Color = xFF0CCACA
+      Size.Width = 766.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claNull
+      XRadius = 20.000000000000000000
+      YRadius = 20.000000000000000000
+      object lbltitleagendamento: TLabel
+        Align = Center
+        StyledSettings = []
+        Size.Width = 632.000000000000000000
+        Size.Height = 37.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Roboto'
+        TextSettings.Font.Size = 42.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claWhite
+        Text = 'AGENDAMENTO'
+        TabOrder = 0
+      end
+    end
+    object backgroundagendamento4: TRectangle
+      Align = Client
+      Fill.Color = xFFFFF7DC
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 760.000000000000000000
+      Size.Height = 470.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF81F6F6
+      XRadius = 18.000000000000000000
+      YRadius = 18.000000000000000000
+    end
+  end
+  object btn_agendar: TRectangle
+    Fill.Color = xFF0CCACA
+    Position.X = 96.000000000000000000
+    Position.Y = 480.000000000000000000
+    Size.Width = 202.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    XRadius = 20.000000000000000000
+    YRadius = 20.000000000000000000
+    OnClick = btn_agendarClick
+    object speedbtn_agendar: TSpeedButton
+      Align = Client
+      StyledSettings = []
+      HitTest = False
+      Size.Width = 202.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'AGENDAR'
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+    end
+  end
+  object btn_cancelar: TRectangle
+    Fill.Color = claCrimson
+    Position.X = 471.000000000000000000
+    Position.Y = 480.000000000000000000
+    Size.Width = 202.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    Stroke.Thickness = 3.000000000000000000
+    XRadius = 20.000000000000000000
+    YRadius = 20.000000000000000000
+    OnClick = btn_cancelarClick
+    object speedbtn_cancelar: TSpeedButton
+      Align = Client
+      StyledSettings = []
+      HitTest = False
+      Size.Width = 202.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'CANCELAR'
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+    end
+  end
+  object backgroundlbldata: TRectangle
+    Fill.Color = xFF0CCACA
+    Position.X = 16.000000000000000000
+    Position.Y = 202.000000000000000000
+    Size.Width = 740.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    XRadius = 16.500000000000000000
+    YRadius = 16.500000000000000000
+    object lbldata: TLabel
+      StyledSettings = []
+      Margins.Left = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Size.Width = 133.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      Text = 'DATA'
+      TabOrder = 0
+    end
+    object lblhorario: TLabel
+      StyledSettings = []
+      Margins.Left = 20.000000000000000000
+      Position.X = 392.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      Text = 'HORARIO'
+      TabOrder = 1
+    end
+  end
+  object backgroundlblobservacao: TRectangle
+    Fill.Color = xFF0CCACA
+    Position.X = 16.000000000000000000
+    Position.Y = 290.000000000000000000
+    Size.Width = 740.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    XRadius = 16.500000000000000000
+    YRadius = 16.500000000000000000
+    object lblobservacao: TLabel
+      Align = Center
+      StyledSettings = []
+      Margins.Left = 20.000000000000000000
+      Size.Width = 87.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      Text = 'SERVI'#199'O'
+      TabOrder = 0
+    end
+  end
+  object backgroundagendamentonome: TRectangle
+    Fill.Color = xFF0CCACA
+    Position.X = 16.000000000000000000
+    Position.Y = 114.000000000000000000
+    Size.Width = 740.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    XRadius = 16.500000000000000000
+    YRadius = 16.500000000000000000
+    object lblnome: TLabel
+      StyledSettings = []
+      Margins.Left = 120.000000000000000000
+      Position.X = 152.000000000000000000
+      Size.Width = 241.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      Text = 'NOME'
+      TabOrder = 0
+    end
+    object lblcelular: TLabel
+      StyledSettings = []
+      Margins.Left = 20.000000000000000000
+      Position.X = 528.000000000000000000
+      Size.Width = 176.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      Text = 'CELULAR'
+      TabOrder = 1
+    end
+  end
+  object edt_nome: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 20.000000000000000000
+    Position.X = 168.000000000000000000
+    Position.Y = 154.000000000000000000
+    Size.Width = 353.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Style, FontColor]
+  end
+  object edt_celular: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 20.000000000000000000
+    Position.X = 544.000000000000000000
+    Position.Y = 154.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Style, FontColor]
+  end
+  object edt_date: TDateEdit
+    Date = 44242.000000000000000000
+    Position.X = 37.000000000000000000
+    Position.Y = 242.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Style, FontColor]
+    TabOrder = 4
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 20.000000000000000000
+  end
+  object edt_time: TTimeEdit
+    Time = 0.896127106481481500
+    Position.X = 408.000000000000000000
+    Position.Y = 242.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Style, FontColor]
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 20.000000000000000000
+    TabOrder = 5
+  end
+  object edt_servico: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    StyleLookup = 'comboeditstyle'
+    TabOrder = 6
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 20.000000000000000000
+    Position.X = 32.000000000000000000
+    Position.Y = 330.000000000000000000
+    Size.Width = 705.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Style, FontColor]
+  end
+  object Button1: TButton
+    StyledSettings = [Style, FontColor]
+    Position.X = 32.000000000000000000
+    Position.Y = 154.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Pesquisar'
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 20.000000000000000000
+  end
+  object edt_servico_valor: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 12
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 20.000000000000000000
+    Position.X = 32.000000000000000000
+    Position.Y = 420.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Style, FontColor]
+  end
+  object Rectangle1: TRectangle
+    Fill.Color = xFF0CCACA
+    Position.X = 16.000000000000000000
+    Position.Y = 370.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    XRadius = 16.500000000000000000
+    YRadius = 16.500000000000000000
+    object Label1: TLabel
+      Align = Center
+      StyledSettings = []
+      Size.Width = 66.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      Text = 'PRE'#199'O'
+      TabOrder = 0
+    end
+  end
+  object Label2: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 32.000000000000000000
+    Position.Y = 451.000000000000000000
+    Size.Width = 601.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.FontColor = claRed
+    Text = 
+      '* Em caso de servi'#231'o onde o valor s'#243' pode ser informado ap'#243's ava' +
+      'lia'#231#227'o, deixe o valor zerado.'
+    TabOrder = 14
+  end
+end

@@ -1,0 +1,67 @@
+unit delivery;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.ExtCtrls, Vcl.Buttons,
+  Vcl.Grids, Vcl.DBGrids, Vcl.Imaging.jpeg, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf,
+  FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys,
+  FireDAC.Phys.SQLite, FireDAC.Phys.SQLiteDef, FireDAC.Stan.ExprFuncs,
+  FireDAC.VCLUI.Wait, FireDAC.Comp.Client, Vcl.Menus, Vcl.StdCtrls,
+  FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt,
+  FireDAC.Comp.DataSet;
+
+type
+  TFdelivery = class(TForm)
+    Panel1: TPanel;
+    DBGrid1: TDBGrid;
+    Panel2: TPanel;
+    SpeedButton3: TSpeedButton;
+    SpeedButton4: TSpeedButton;
+    SpeedButton5: TSpeedButton;
+    Image1: TImage;
+    Panel3: TPanel;
+    Label1: TLabel;
+    MainMenu1: TMainMenu;
+    PRODUTOS1: TMenuItem;
+    CADASTRARPRODUTO1: TMenuItem;
+    CLIENTES1: TMenuItem;
+    CADASTRARCLIENTE1: TMenuItem;
+    CONSULTARPRODUTOS1: TMenuItem;
+    CONSULTARCLIENTES1: TMenuItem;
+    RESUMODIA1: TMenuItem;
+    CONSULTAR1: TMenuItem;
+    FDConnection1: TFDConnection;
+    FDQuery1: TFDQuery;
+    DataSource1: TDataSource;
+    procedure CADASTRARPRODUTO1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Fdelivery: TFdelivery;
+
+implementation
+uses crud_produto;
+{$R *.dfm}
+
+procedure TFdelivery.CADASTRARPRODUTO1Click(Sender: TObject);
+var
+crud : TFcrud_produto;
+begin
+
+    try
+        crud := TFcrud_produto.Create(Application);
+        crud.Show;
+    finally
+        FreeAndNil(crud);
+    end;
+
+end;
+
+end.

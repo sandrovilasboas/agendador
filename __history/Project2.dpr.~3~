@@ -1,0 +1,17 @@
+program Project2;
+
+uses
+  Vcl.Forms,
+  crud_produto in 'crud_produto.pas' {Fcrud_produto},
+  delivery in 'delivery.pas' {Fdelivery},
+  grid_produto in 'grid_produto.pas' {Fgrid_produto};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFdelivery, Fdelivery);
+  Application.CreateForm(TFgrid_produto, Fgrid_produto);
+  Application.Run;
+end.

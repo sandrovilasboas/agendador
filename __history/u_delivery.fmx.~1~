@@ -1,0 +1,201 @@
+object f_delivery: Tf_delivery
+  Left = 600
+  Top = 0
+  ClientHeight = 779
+  ClientWidth = 1474
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  Left = 600
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Client
+    Fill.Color = xFFE88820
+    Size.Width = 1474.000000000000000000
+    Size.Height = 779.000000000000000000
+    Size.PlatformDefault = False
+    object Rectangle6: TRectangle
+      Align = Top
+      Fill.Color = xFFFFB759
+      Position.Y = 113.000000000000000000
+      Size.Width = 1474.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claNull
+    end
+    object Rectangle5: TRectangle
+      Align = Bottom
+      Fill.Color = xFF555555
+      Position.Y = 665.000000000000000000
+      Size.Width = 1474.000000000000000000
+      Size.Height = 114.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claNull
+      object Rectangle7: TRectangle
+        Align = Client
+        Fill.Color = xFFFFB759
+        Margins.Left = 30.000000000000000000
+        Margins.Top = 15.000000000000000000
+        Margins.Right = 30.000000000000000000
+        Margins.Bottom = 15.000000000000000000
+        Size.Width = 1414.000000000000000000
+        Size.Height = 84.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claNull
+        object SpeedButton1: TSpeedButton
+          Align = Left
+          StyledSettings = [FontColor]
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 175.000000000000000000
+          Size.Height = 64.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'NOVO PEDIDO'
+          TextSettings.Font.Family = 'Roboto'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          OnClick = SpeedButton1Click
+        end
+        object SpeedButton2: TSpeedButton
+          Align = Left
+          StyledSettings = [FontColor]
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 205.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 175.000000000000000000
+          Size.Height = 64.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'ENTREGAR'
+          TextSettings.Font.Family = 'Roboto'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        object SpeedButton3: TSpeedButton
+          Align = Left
+          StyledSettings = [FontColor]
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 400.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 175.000000000000000000
+          Size.Height = 64.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'FINALIZAR'
+          TextSettings.Font.Family = 'Roboto'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        object SpeedButton4: TSpeedButton
+          Align = Right
+          StyledSettings = [FontColor]
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 1229.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 175.000000000000000000
+          Size.Height = 64.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'RELAT'#211'RIOS'
+          TextSettings.Font.Family = 'Roboto'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+    end
+    object Rectangle2: TRectangle
+      Align = Top
+      Fill.Color = xFF555555
+      Size.Width = 1474.000000000000000000
+      Size.Height = 113.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claNull
+      object Rectangle3: TRectangle
+        Align = Center
+        Fill.Color = xFFFFB759
+        RotationAngle = 45.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 125.000000000000000000
+        Size.PlatformDefault = False
+        object Rectangle4: TRectangle
+          Align = Center
+          Fill.Color = xFF555555
+          RotationAngle = 90.000000000000000000
+          Size.Width = 100.000000000000000000
+          Size.Height = 100.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claNull
+        end
+      end
+    end
+    object Rectangle8: TRectangle
+      Align = Client
+      Fill.Color = xFFFFEECF
+      Size.Width = 1474.000000000000000000
+      Size.Height = 496.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claNull
+      object Grid1: TGrid
+        Align = Client
+        CanFocus = True
+        ClipChildren = True
+        Size.Width = 1474.000000000000000000
+        Size.Height = 496.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Roboto'
+        TextSettings.Font.Size = 15.000000000000000000
+        StyledSettings = [FontColor]
+        TabOrder = 0
+        Options = [AlternatingRowBackground, ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, HeaderClick, AutoDisplacement]
+        OnGetValue = Grid1GetValue
+        OnSetValue = Grid1SetValue
+        Viewport.Width = 1454.000000000000000000
+        Viewport.Height = 471.000000000000000000
+        object Column1: TColumn
+          Header = 'NOME'
+          Size.Width = 353.000000000000000000
+        end
+        object Column2: TColumn
+          Header = 'ENDERE'#199'O'
+          Size.Width = 295.000000000000000000
+        end
+        object Column3: TColumn
+          Header = 'NUMERO'
+        end
+        object Column4: TColumn
+          Header = 'BAIRRO'
+          Size.Width = 90.000000000000000000
+        end
+        object Column5: TColumn
+          Header = 'CIDADE'
+        end
+        object Column6: TColumn
+          Header = 'TELEFONE'
+        end
+        object Column7: TColumn
+          Header = 'VALOR'
+        end
+        object Column8: TColumn
+          Header = 'TAXA'
+        end
+        object Column9: TColumn
+          Header = 'TOTAL'
+        end
+        object Column10: TColumn
+          Header = 'PEDIDO'
+        end
+      end
+    end
+  end
+end

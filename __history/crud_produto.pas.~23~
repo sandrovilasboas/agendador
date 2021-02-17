@@ -1,0 +1,56 @@
+unit crud_produto;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Buttons;
+
+type
+  TFcrud_produto = class(TForm)
+    Panel1: TPanel;
+    Label1: TLabel;
+    Label3: TLabel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    SpeedButton3: TSpeedButton;
+    procedure SpeedButton3Click(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure Edit2KeyPress(Sender: TObject; var Key: Char);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Fcrud_produto: TFcrud_produto;
+
+implementation
+uses delivery;
+
+{$R *.dfm}
+
+procedure TFcrud_produto.Edit2KeyPress(Sender: TObject; var Key: Char);
+begin
+  if (not (Key in ['0'..'9', '.', #8, #9])) OR ( (Key = ',') and (pos(',',TEdit(Sender).Text)>0) ) then Key := #0;
+end;
+
+procedure TFcrud_produto.SpeedButton1Click(Sender: TObject);
+begin
+  Fdelivery.FDQuery1.Close;
+  Fdelivery.FDQuery1.SQL.Text := 'INSERT INTO produto(DESCRICAO, VALOR)' +
+                                 'VALUES (:DESCRICAO, :VALOR)';
+  Fdelivery.FDQuery1.ParamByName('DESCRICAO').AsString := Edit1.Text;
+  Fdelivery.FDQuery1.ParamByName('VALOR').AsString := Edit2.Text;
+  Fdelivery.FDQuery1.ExecSQL;
+end;
+
+procedure TFcrud_produto.SpeedButton3Click(Sender: TObject);
+begin
+ Close;
+end;
+
+end.
